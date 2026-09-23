@@ -1,2 +1,5 @@
-dataset,model,params_M,test_acc,test_auc,test_ece_raw,test_ece_temp_scaled,temperature,train_seconds,published_published_resnet18_auc,published_published_resnet18_acc
-pneumoniamnist,small_cnn,0.29,0.8942,0.9595,0.0315,0.0315,0.98,17.9,0.944,0.854
+dataset,model,params_M,test_acc,test_auc,test_ece_raw,test_ece_temp_scaled,temperature,train_seconds,published_resnet18_auc,published_resnet18_acc
+pneumoniamnist,small_cnn,0.29,0.8862,0.9785,0.0742,0.0754,0.912,238.0,0.944,0.854
+pneumoniamnist,resnet18_28,11.17,0.8622,0.9746,0.089,0.0878,1.026,1325.3,0.944,0.854
+dermamnist,small_cnn,0.29,0.7791,0.9325,0.0279,0.0268,0.983,173.3,0.917,0.735
+dermamnist,resnet18_28,11.17,0.7646,0.9279,0.0233,0.0227,0.991,2582.1,0.917,0.735

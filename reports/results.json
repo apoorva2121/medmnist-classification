@@ -4,17 +4,56 @@
       "dataset": "pneumoniamnist",
       "model": "small_cnn",
       "params_M": 0.29,
-      "test_acc": 0.8942,
-      "test_auc": 0.9595,
-      "test_ece_raw": 0.0315,
-      "test_ece_temp_scaled": 0.0315,
-      "temperature": 0.98,
-      "train_seconds": 17.9,
-      "published_published_resnet18_auc": 0.944,
-      "published_published_resnet18_acc": 0.854
+      "test_acc": 0.8862,
+      "test_auc": 0.9785,
+      "test_ece_raw": 0.0742,
+      "test_ece_temp_scaled": 0.0754,
+      "temperature": 0.912,
+      "train_seconds": 238.0,
+      "published_resnet18_auc": 0.944,
+      "published_resnet18_acc": 0.854
+    },
+    {
+      "dataset": "pneumoniamnist",
+      "model": "resnet18_28",
+      "params_M": 11.17,
+      "test_acc": 0.8622,
+      "test_auc": 0.9746,
+      "test_ece_raw": 0.089,
+      "test_ece_temp_scaled": 0.0878,
+      "temperature": 1.026,
+      "train_seconds": 1325.3,
+      "published_resnet18_auc": 0.944,
+      "published_resnet18_acc": 0.854
+    },
+    {
+      "dataset": "dermamnist",
+      "model": "small_cnn",
+      "params_M": 0.29,
+      "test_acc": 0.7791,
+      "test_auc": 0.9325,
+      "test_ece_raw": 0.0279,
+      "test_ece_temp_scaled": 0.0268,
+      "temperature": 0.983,
+      "train_seconds": 173.3,
+      "published_resnet18_auc": 0.917,
+      "published_resnet18_acc": 0.735
+    },
+    {
+      "dataset": "dermamnist",
+      "model": "resnet18_28",
+      "params_M": 11.17,
+      "test_acc": 0.7646,
+      "test_auc": 0.9279,
+      "test_ece_raw": 0.0233,
+      "test_ece_temp_scaled": 0.0227,
+      "temperature": 0.991,
+      "train_seconds": 2582.1,
+      "published_resnet18_auc": 0.917,
+      "published_resnet18_acc": 0.735
     }
   ],
-  "runtime_seconds": 21.1,
+  "runtime_seconds": 4326.5,
   "config": {
     "paths": {
       "data": "data",
@@ -32,7 +71,7 @@
       }
     },
     "training": {
-      "epochs": 2,
+      "epochs": 12,
       "batch_size": 128,
       "lr": 0.001,
       "weight_decay": 0.0001,

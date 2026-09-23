@@ -7,7 +7,7 @@ import torch.nn as nn
 
 
 class SmallCNN(nn.Module):
-    """~120k params. Three conv blocks, global pooling, linear head."""
+    """~0.29M params. Three conv blocks, global pooling, linear head."""
 
     def __init__(self, in_ch: int, n_classes: int) -> None:
         super().__init__()
