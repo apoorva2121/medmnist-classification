@@ -1,0 +1,30 @@
+# MedMNIST classification — configuration. CPU-only laptop sizing.
+
+paths:
+  data: data
+  reports: reports
+  artifacts: artifacts
+
+datasets:
+  # Published MedMNIST v2 (Yang et al., 2023) ResNet-18 @28px test scores — reference points.
+  pneumoniamnist: {published_resnet18_auc: 0.944, published_resnet18_acc: 0.854}
+  dermamnist:     {published_resnet18_auc: 0.917, published_resnet18_acc: 0.735}
+
+training:
+  epochs: 12
+  batch_size: 128
+  lr: 0.001
+  weight_decay: 0.0001
+  seed: 42
+  num_workers: 0
+  augment: true            # random crop + horizontal flip (train only)
+  early_stopping_patience: 4
+
+models:
+  # A compact CNN trained from scratch, and a ResNet-18 adapted to 28px inputs.
+  - small_cnn
+  - resnet18_28
+
+calibration:
+  n_bins: 15               # expected calibration error bins
+  temperature_scaling: true  # fit T on the validation split, report before/after ECE

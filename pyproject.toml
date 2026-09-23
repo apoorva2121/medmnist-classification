@@ -1,0 +1,12 @@
+[project]
+name = "medmnist-classification"
+version = "0.1.0"
+description = "MedMNIST v2 classification on CPU: small CNN and ResNet-18 vs published benchmarks, with calibration and Grad-CAM"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

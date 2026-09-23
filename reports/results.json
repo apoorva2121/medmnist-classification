@@ -1,0 +1,53 @@
+{
+  "results": [
+    {
+      "dataset": "pneumoniamnist",
+      "model": "small_cnn",
+      "params_M": 0.29,
+      "test_acc": 0.8942,
+      "test_auc": 0.9595,
+      "test_ece_raw": 0.0315,
+      "test_ece_temp_scaled": 0.0315,
+      "temperature": 0.98,
+      "train_seconds": 17.9,
+      "published_published_resnet18_auc": 0.944,
+      "published_published_resnet18_acc": 0.854
+    }
+  ],
+  "runtime_seconds": 21.1,
+  "config": {
+    "paths": {
+      "data": "data",
+      "reports": "reports",
+      "artifacts": "artifacts"
+    },
+    "datasets": {
+      "pneumoniamnist": {
+        "published_resnet18_auc": 0.944,
+        "published_resnet18_acc": 0.854
+      },
+      "dermamnist": {
+        "published_resnet18_auc": 0.917,
+        "published_resnet18_acc": 0.735
+      }
+    },
+    "training": {
+      "epochs": 2,
+      "batch_size": 128,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "seed": 42,
+      "num_workers": 0,
+      "augment": true,
+      "early_stopping_patience": 4
+    },
+    "models": [
+      "small_cnn",
+      "resnet18_28"
+    ],
+    "calibration": {
+      "n_bins": 15,
+      "temperature_scaling": true
+    }
+  }
+}

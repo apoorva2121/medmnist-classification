@@ -1,0 +1,2 @@
+dataset,model,params_M,test_acc,test_auc,test_ece_raw,test_ece_temp_scaled,temperature,train_seconds,published_published_resnet18_auc,published_published_resnet18_acc
+pneumoniamnist,small_cnn,0.29,0.8942,0.9595,0.0315,0.0315,0.98,17.9,0.944,0.854

@@ -1,0 +1,6 @@
+data/
+artifacts/
+reports/*.npy
+__pycache__/
+*.pyc
+.pytest_cache/
