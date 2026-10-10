@@ -121,3 +121,7 @@ via the `medmnist` package.
   image classification.* Scientific Data.
 - Guo, C. et al. (2017). *On calibration of modern neural networks.* ICML.
 - Selvaraju, R. R. et al. (2017). *Grad-CAM: Visual explanations from deep networks.* ICCV.
+
+## Licence
+
+[MIT](LICENSE). MedMNIST v2 is distributed by its authors (Yang et al., 2023) under CC BY 4.0 and is downloaded by the `medmnist` package rather than redistributed here.
